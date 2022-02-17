@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    position: relative;
+    left: -30px;
+}
+.woman-lines{
+    overflow: hidden;
+    width: 100%;
+}
+.lines-background {
+    position: absolute;
+    left: -40px;
+    width: 100%;
+}
+.lines-foreground {
+    position: relative;
+    left: -40px;
+    width: 100%;
+}
+.box-illustration {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container {
+    background: #fff;
+    width: 930px;
+    border-radius: 20px;
+    transition: all ease-in-out 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.faq {
+    width: 400px;
+    padding: 50px 50px 50px 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    color: hsl(238, 29%, 16%);
+    font-weight: 600;
+}
+.questionAnswer {
+    margin-top: 12px;
+    margin-bottom: 11px;
+    width: 400px;
+}
+#questions1, #questions2, #questions3, #questions4, #questions5 {
+    display: flex;
+    width: 400px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+.divider {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom:  1px solid hsl(240, 5%, 91%);
+}
+#question1, #question2, #question3, #question4, #question5 {
+    font-weight: 300;
+    color: hsl(273, 75%, 66%);
+    transition: 1s ease-all;
+}
+#question1:hover, #question2:hover, #question3:hover, #question4:hover, #question5:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+}
+.questions span img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.active {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.visible-faq {
+    height: 35px;
+}
+p {
+    color: hsl(240, 6%, 50%);
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 12px;
+    height: 0;
+    overflow: hidden;
+    transition: ease-out 0.3s;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 95%;
+    color: #fff;
+}
+footer a {
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 950px) {
+    * {
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        overflow: visible;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+    }
+    .main-container {
+        width: 90%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        display: block;
+    }
+    .image-container {
+        width: 80%;
+        left: 23%;
+    }
+    .woman-lines {
+        overflow: visible;
+    }
+    main {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-illustration {
+        display: none;
+    }
+    .woman-lines{
+        width: 100%;
+    }
+    .lines-image {
+        width: 100%;
+    }
+    .faq {
+        margin-top: 50px;
+        margin-left: 0;
+        max-width: 270px;
+    }
+    .title {
+        text-align: center;
+    }
+    .questionAnswer {
+        max-width: 270px;
+    }
+    #questions1, #questions2, #questions3, #questions4, #questions5 {
+        max-width: 270px;
+    }
+    #question1, #question2, #question3, #question4, #question5 {
+        font-size: 13px;
+    }
+    p {
+        max-width: 270px;
+        font-size: 10px;
+    }
+    footer {
+        width: 100%;
+    }
+}

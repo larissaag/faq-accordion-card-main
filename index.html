@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+      <div class="main-container">
+        <div class="image-container">
+          <div class="woman-lines">
+              <picture>
+                <source srcset="images/bg-pattern-mobile.svg" media="(max-width: 950px)">
+                <img class="lines-background" src="images/bg-pattern-desktop.svg" alt="lines image">
+              </picture>
+              <picture>
+                <source srcset="images/illustration-woman-online-mobile.svg" media="(max-width: 950px)">
+                <img class="lines-foreground" src="images/illustration-woman-online-desktop.svg" alt="woman illustration">
+              </picture>
+            </div>
+            <div class="box-illustration">
+              <img class="box-image" src="images/illustration-box-desktop.svg" alt="box illustration">
+            </div>
+          </div>
+        <main>
+          <div class="faq">
+            <div class="title">
+            <h1>FAQ</h1>
+            </div>
+          <div class="questionAnswer">
+            <div id="questions1" onclick="openP('questions1', 'answer1', 'icon1')">
+              <h4 id="question1">How many team members can I invite?</h4>
+              <span ><img src="images/icon-arrow-down.svg" id="icon1" alt="arrow icon" /></span>
+            </div>
+            <div class="divider"></div>
+            <p id="answer1">
+              You can invite up to 2 additional users on the Free plan.There is no limit on team members for the Premium plan.
+            </p>
+          </div>
+          <div class="questionAnswer">
+            <div id="questions2" onclick="openP('questions2', 'answer2', 'icon2')">
+              <h4 id="question2">What is the maximum file upload size?</h4>
+              <span><img src="images/icon-arrow-down.svg" id="icon2" alt="arrow icon" /></span>
+            </div>
+            <div class="divider"></div>
+            <p id="answer2">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+          <div class="questionAnswer">
+            <div id="questions3"onclick="openP('questions3', 'answer3', 'icon3')">
+              <h4 id="question3">How do I reset my password?</h4>
+              <span><img src="images/icon-arrow-down.svg" id="icon3" alt="arrow icon" /></span>
+            </div>
+            <div class="divider"></div>
+            <p id="answer3">
+              Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+          <div class="questionAnswer">
+            <div id="questions4" onclick="openP('questions4', 'answer4', 'icon4')">
+              <h4 id="question4">Can I cancel my subscription?</h4>
+              <span><img src="images/icon-arrow-down.svg" id="icon4" alt="arrow icon" /></span>
+            </div>
+            <div class="divider"></div>
+            <p id="answer4">
+              Yes! Send us a message and we`ll process your request no questions asked.
+            </p>
+          </div>
+          <div class="questionAnswer">
+            <div id="questions5" onclick="openP('questions5', 'answer5', 'icon5')">
+              <h4 id="question5">Do you provide additional support?</h4>
+              <span><img src="images/icon-arrow-down.svg" id="icon5" alt="arrow icon" /></span>
+            </div>
+            <div class="divider"></div>
+            <p id="answer5">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </div>
+        </main>
+      </div>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/larissaag" target="_blank"
+            >Larissa Guilherme</a
+          >.
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
