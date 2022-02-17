@@ -21,18 +21,18 @@ body {
 }
 .lines-background {
     position: absolute;
-    left: -40px;
+    left: -70px;
     width: 100%;
 }
 .lines-foreground {
     position: relative;
-    left: -40px;
+    left: -70px;
     width: 100%;
 }
 .box-illustration {
     position: absolute;
-    top: 130px;
-    left: -50px;
+    top: 140px;
+    left: -90px;
 }
 .container {
     width: 100%;
