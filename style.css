@@ -185,6 +185,9 @@ footer a {
     #question1, #question2, #question3, #question4, #question5 {
         font-size: 13px;
     }
+    .visible-faq {
+        height: 40px;
+    }
     p {
         max-width: 270px;
         font-size: 10px;
@@ -195,7 +198,7 @@ footer a {
 }
 @media (max-width: 450px) {
     .image-container {
-        left: 27%;
+        left: 28%;
     }
     footer {
         top: 115%;
