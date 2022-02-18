@@ -193,3 +193,11 @@ footer a {
         width: 100%;
     }
 }
+@media (max-width: 375px) {
+    .image-container {
+        left: 30%;
+    }
+    footer {
+        top: 120%;
+    }
+}
