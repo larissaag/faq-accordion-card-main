@@ -44,26 +44,5 @@ Background gradient:
 
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
 - Weights: 400, 700
-if()){
-            imageClick.addEventListener('click', ()=>{
-                icon.classList.toggle('inactive');
-            })
 
-        }
-        function openP(teste, teste2, teste3) {
-    let imageClick = document.getElementById(teste);
-    imageClick.addEventListener('click', () => {
-        let p = document.getElementById(teste2);
-        p.classList.toggle('visible-faq')
-        let icon = document.getElementById(teste3);
-        icon.classList.toggle('active');
-        if (p.classList.contains('visible-faq')){
-            imageClick.addEventListener('click', ()=>{
-                icon.classList.remove('active');
-                icon.classList.add('inactive');
-                p.classList.toggle('visible-faq')
-            })
-        }
-    });
-}
 
