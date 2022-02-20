@@ -11,6 +11,30 @@ body {
     justify-content: center;
     align-items: center;
 }
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    background: #fff;
+    width: 930px;
+    border-radius: 20px;
+    transition: all ease-in-out 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 .image-container {
     position: relative;
     left: -30px;
@@ -33,27 +57,6 @@ body {
     position: absolute;
     top: 140px;
     left: -90px;
-}
-.container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.main-container {
-    width: 100%;
-}
-main {
-    background: #fff;
-    width: 930px;
-    border-radius: 20px;
-    transition: all ease-in-out 200ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
 }
 .faq {
     width: 400px;
@@ -83,12 +86,14 @@ main {
     margin-top: 20px;
     border-bottom:  1px solid hsl(240, 5%, 91%);
 }
-#question1, #question2, #question3, #question4, #question5 {
+.question {
     font-weight: 300;
+    font-size: 15px;
     color: hsl(273, 75%, 66%);
     transition: 1s ease-all;
+    overflow: visible;
 }
-#question1:hover, #question2:hover, #question3:hover, #question4:hover, #question5:hover {
+.question:hover {
     cursor: pointer;
     color: hsl(14, 88%, 65%);
 }
@@ -191,8 +196,8 @@ footer a {
     #questions1, #questions2, #questions3, #questions4, #questions5 {
         max-width: 270px;
     }
-    #question1, #question2, #question3, #question4, #question5 {
-        font-size: 13px;
+    .question {
+        font-size: 14px;
     }
     .visible-faq {
         height: 45px;
